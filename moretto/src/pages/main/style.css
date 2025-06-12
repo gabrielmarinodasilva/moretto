@@ -77,27 +77,4 @@ form {
   cursor: pointer;
 }
 
-.botao-livro{
-  text-decoration:  none;
-  color: black;
-}
-.option{
-  border: 1px solid #48456c;
-    border-radius: 30px;
-    height: 40px;
-    background-color: #363653;
-    color: #fff;
-    font-size: 16px;
-    padding-left: 10px;
-    outline: none;
-}
-/* 
-.button-form{
-  background-color: #8b8ae1;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  color: #2e2d4e;
-  
 
-} */
