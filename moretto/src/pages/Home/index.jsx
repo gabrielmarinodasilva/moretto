@@ -63,13 +63,14 @@ function formatDate(dateStr) {
     <div className='container'>
       <form>
         <h1>Cadastro de Autor</h1>
-        <input placeholder="Nome " name='nome' ref={inputNome} />
-        <input placeholder="Biografia " name='biografia' ref={inputBiografia} />
-        <input placeholder="Data Nascimento " type="date" name='data' ref={inputDataNascimento} />
-        <input placeholder="Nacionalidade " name='nacionalidade' ref={inputNacionalidade} />
+        <input placeholder="Nome " name='nome' ref={inputNome}required />
+        <input placeholder="Biografia " name='biografia' ref={inputBiografia} required/>
+        <input placeholder="Data Nascimento " type="date" name='data' ref={inputDataNascimento}required />
+        <input placeholder="Nacionalidade " name='nacionalidade' ref={inputNacionalidade} required/>
 
-          <button type="button" onClick={createUsers}>Cadastrar</button>
-          <button type='button'><Link to="/livros" className="botao-livro">Cadastrar Livro</Link></button>
+          <button type="Submit" onClick={createUsers}>Cadastrar</button>
+          <button type='button'><Link to="/livros" className="botao_opcao">Cadastrar Livro</Link></button>
+          <button type='button'><Link to="/home" className='botao_opcao' >Voltar Home</Link></button>
 
       </form>
 
@@ -81,9 +82,15 @@ function formatDate(dateStr) {
             <p>Data nascimento: <span>{formatDate(user.data_nascimento)} </span></p>
             <p>Nacionalidade: <span>{user.nacionalidade} </span></p>
           </div>
-          <button onClick={() =>deleteUsers(user.id_autor)}>
-            <img src={Trash} />
-          </button>
+                  <div className='botoes'>
+                    
+                    <button className='excluir'onClick={() => deleteLivro(livro.id_livro)}>
+                      Excluir
+                    </button>
+                    <button className='editar'onClick={() => editarLivro(livro)}>
+                      Editar
+                    </button>
+                  </div>
           </div>
 
         ))}
