@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2c2c54;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #2c2c54;
+  font-family: Arial, sans-serif;
+}
+
+.container h2 {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Botões de opção */
+.botao_opcao {
+  border-radius: 30px;
+  background-color: #8b8ae1;
+  height: 40px;
+  border: none;
+  font-weight: normal;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  padding: 0 20px;
+  margin: 5px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.botao_opcao:hover {
+  background-color: #7a79d1;
+}
+
+/* Cards dos autores */
+.Card {
+  background-color: #363653;
+  margin: 10px 0;
+  padding: 15px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 5px;
+  border: 1px solid #48456c;
+}
+
+.autor-nome {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.Card p {
+  color: #fff;
+  font-size: 14px;
+  margin: 5px 0;
+  font-family: Arial, sans-serif;
+}
+
+.Card p strong {
+  color: #fff;
+  font-weight: bold;
+}
+
+.Card ul {
+  margin: 5px 0;
+  padding-left: 20px;
+}
+
+.Card li {
+  color: #fff;
+  margin: 3px 0;
+  font-family: Arial, sans-serif;
+}
+
+.Card li p {
+  margin: 0;
+  color: #fff;
+}
+
+.Card li p b {
+  color: #8b8ae1;
+  font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 10px;
+  }
+  
+  .Card {
+    max-width: 95%;
+    padding: 20px;
+  }
+  
+  .autor-nome {
+    font-size: 20px;
+  }
+  
+  .botao_opcao {
+    width: 100%;
+    margin: 5px 0;
+    max-width: 300px;
+  }
+}

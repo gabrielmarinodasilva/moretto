@@ -1,0 +1,106 @@
+
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 32px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #2e2d4e;
+  max-width: 50%;
+  width: 400px;
+  margin-bottom: 20px;
+  
+
+
+& button {
+    border-radius: 30px;
+    background-color: #8b8ae1;
+    height: 40px;
+    border: none;
+
+    cursor: pointer;
+    font-size: 14px;
+    color:white
+
+  }
+
+& button:hover {
+    opacity: 0.8;
+  }
+
+& input {
+    border: 1px solid #48456c;
+    border-radius: 30px;
+    height: 40px;
+    background-color: #363653;
+    color: #fff;
+    font-size: 16px;
+    padding-left: 10px;
+    outline: none;
+  }
+}
+.Card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+& p {
+    color: #fff;
+
+  }
+
+
+& button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+.botao_opcao{
+  text-decoration:  none;
+  color: black;
+}
+.editar {
+  background-color: orange;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.excluir {
+  background-color: red;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.botoes{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
